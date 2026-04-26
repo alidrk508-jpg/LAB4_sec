@@ -25,7 +25,7 @@ Une fois le fichier JAR obtenu, nous l'ouvrons avec **JD-GUI** pour décompiler 
 
 ---
 
-## 3. Étape 3 : Analyse du Manifeste
+## 3. Étape 3 : Analyse du Manifeste (obtener par jadx)
 
 Nous examinons le fichier **AndroidManifest.xml** pour comprendre la structure de l'application et identifier les activités principales.
 
@@ -61,8 +61,6 @@ En analysant le code décompilé, nous découvrons le mécanisme de chiffrement 
 
 Avec les informations collectées (clé AES et données chiffrées), nous créons un script Python pour déchiffrer la chaîne secrète.
 
-![Exploit Script](img/script.png)
-
 ### Script de Décryption
 
 ```python
@@ -93,7 +91,7 @@ if __name__ == "__main__":
 
 Exécution du shell pour obtenir la chaîne secrète:
 
-![Shell Execution](img/shell1.png)
+![Shell Execution](img/res.png)
 
 ---
 
@@ -102,7 +100,7 @@ Exécution du shell pour obtenir la chaîne secrète:
 1. **Extraction** : Extraire le DEX de l'APK
 2. **Conversion** : Convertir DEX en JAR
 3. **Décompilation** : Utiliser JD-GUI pour obtenir le code source
-4. **Analyse Statique** : Examiner le code pour identifier le mécanisme de chiffrement
+4. **Analyse Statique (jadx)** : Examiner le code pour identifier le mécanisme de chiffrement
 5. **Extraction des Secrets** : Trouver la clé de chiffrement et les données chiffrées
 6. **Décryptage** : Créer un script pour déchiffrer la chaîne secrète
 7. **Validation** : Exécuter le script et confirmer le résultat
