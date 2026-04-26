@@ -37,7 +37,7 @@ Nous examinons le fichier **AndroidManifest.xml** pour comprendre la structure d
 
 Les ressources de l'application (fichiers XML, chaînes, etc.) peuvent contenir des indices importants.
 
-![Resources Inspection](img/res.png)
+![Resources Inspection](img/hash-rep.png)
 
 ---
 
@@ -53,7 +53,7 @@ Nous utilisons des outils comme **strings** pour extraire et rechercher des cha�
 
 En analysant le code décompilé, nous découvrons le mécanisme de chiffrement utilisé. Il s'agit d'un chiffrement AES en mode ECB.
 
-![Hash Representation](img/hash-rep.png)
+![Hash Representation](img/jd-gui.png)
 
 ---
 
